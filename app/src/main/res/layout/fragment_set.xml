@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="257dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="로그아웃"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_withdrawal"
+            android:layout_width="257dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="회원 탈퇴"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_inquiry"
+            android:layout_width="257dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="관리자 문의"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="아래의 메일로 문의해주세요."
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txt_mail"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:autoLink="email"
+            android:text="InhatcMyRefri@gmail.com"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</FrameLayout>

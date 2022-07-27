@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <!--
+    https://bubblebubble.tistory.com/5
+    ▶ app:showAsAction="ture"로 설정해서 항상 보이게끔 해줍니다. 만약 이 값이 "isRoom"이라면 메뉴에 여유공간이 있을 경우에만 항목들을 보여줍니다.
+    ▶ android:icon에서 각 아이콘별로 보여줄 이미지를 설정할 수 있습니다. app\src\main\res\drawable폴더에 원하는 이미지를 미리 넣어두고 사용하시면 됩니다.
+    ex)android:icon="@drawable/write"
+    ▶ android:title은 아이콘과 함께 메뉴탭에 글씨를 넣을 수 있습니다.
+    -->
+    <item
+        android:id="@+id/first_tab"
+        android:enabled="true"
+        android:fontFamily="@font/nanumsquareround"
+        android:icon="@drawable/refrigerator"
+        android:title="냉장고"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/second_tab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/notification"
+        android:title="알림"/>
+
+    <item
+        android:id="@+id/third_tab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/memo"
+        android:title="메모">
+    </item>
+
+    <item
+        android:id="@+id/fourth_tab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/setting"
+        android:title="설정"/>
+</menu>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "465102025487",
+    "project_id": "my-refrigerator-1d4e0",
+    "storage_bucket": "my-refrigerator-1d4e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465102025487:android:3395306c9ae5946a58047a",
+        "android_client_info": {
+          "package_name": "com.inhatc.my_refrigerator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465102025487-f9gmuba1kkln17d3lqsefbee1la7o5ha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOwHCi6vhbw_fYBaYxkVCR58e5pkbSOPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465102025487-f9gmuba1kkln17d3lqsefbee1la7o5ha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

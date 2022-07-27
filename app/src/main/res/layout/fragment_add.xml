@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:text="카테고리"
+        android:textAppearance="@style/customfontstyle_b"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="메모"
+        android:textAppearance="@style/customfontstyle_b"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edtMemo"
+        app:layout_constraintTop_toBottomOf="@+id/txtBuyDate" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingRight="20dp"
+        android:popupBackground="#f8f8ff"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="@+id/txtCategory"
+        app:layout_constraintTop_toBottomOf="@+id/txtCategory" />
+
+    <TextView
+        android:id="@+id/txtStorage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="보관방법"
+        android:textAppearance="@style/customfontstyle_b"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <EditText
+        android:id="@+id/edtMemo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMemo" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/txtStorage"
+        app:layout_constraintTop_toBottomOf="@+id/txtStorage">
+
+        <RadioButton
+            android:id="@+id/rdoFridge"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="냉장"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rdoFreezer"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="냉동"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rdoFresh"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="신선"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rdoHomeBar"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="홈바"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="식재료명"
+        android:textAppearance="@style/customfontstyle_b"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/spnList"
+        app:layout_constraintTop_toBottomOf="@+id/spnList" />
+
+    <TextView
+        android:id="@+id/txtExpiDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="8dp"
+        android:text="유통기한"
+        android:textAppearance="@style/customfontstyle_b"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLastDate"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/txtBuyDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:text="구입일자"
+        android:textAppearance="@style/customfontstyle_b"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btnBuyDate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="날짜 선택"
+        app:layout_constraintStart_toStartOf="@+id/txtBuyDate"
+        app:layout_constraintTop_toBottomOf="@+id/txtBuyDate" />
+
+    <Button
+        android:id="@+id/btnLastDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="날짜 선택"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/txtExpiDate"
+        app:layout_constraintTop_toTopOf="@+id/btnBuyDate" />
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/categorySpinner"-->
+    <!--        android:layout_width="120dp"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        android:layout_marginTop="11dp"-->
+    <!--        android:entries="@array/category"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/txtCategory"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/txtCategory" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item>정육|계란</item>
+        <item>수산물</item>
+        <item>채소</item>
+        <item>과일</item>
+        <item>우유|유제품</item>
+        <item>두부|김치</item>
+        <item>반찬</item>
+        <item>쌀|잡곡</item>
+        <item>기타</item>
+    </string-array>
+</resources>
